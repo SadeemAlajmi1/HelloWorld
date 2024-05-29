@@ -1,5 +1,5 @@
-# Use a base image, for example, nginx
-FROM nginx
+# Use a base image. We'll use the official Nginx image from Docker Hub.
+FROM nginx:alpine
 
-# Copy your application into the container
-COPY index.html /usr/share/nginx/html
+# Copy the custom index.html file to the Nginx default public directory.
+COPY index.html /usr/share/nginx/html/
