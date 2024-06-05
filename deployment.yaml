@@ -12,7 +12,7 @@ spec:
       labels:
         app: hello-world
     spec:
-      serviceAccountName: sadeem
+    
       containers:
       - name: hello-world-container
         image: salajmi/hello-world-app:latest 
