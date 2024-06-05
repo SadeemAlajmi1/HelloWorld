@@ -15,6 +15,6 @@ spec:
       serviceAccountName: sadeem
       containers:
       - name: hello-world-container
-        image: salajmi/hello-world-app:latest
+        image: {{ .Values.image.repository }}:{{ .Values.image.tag }}
         ports:
         - containerPort: 80
